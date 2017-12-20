@@ -25,9 +25,9 @@ class DefaultController extends Controller
         $em = $this->getDoctrine()->getManager();
 
         $user = new User();
-        $user->setUsername('test1');
+        $user->setUsername('test2');
         $user->setPassword('qwer');
-        $user->setEmail('test1');
+        $user->setEmail('test2');
         $user->setStatus(true);
 
         // tells Doctrine you want to (eventually) save the Product (no queries yet)

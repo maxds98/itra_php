@@ -20,10 +20,8 @@ class LuckyController
     public function numberAction()
     {
         $number = mt_rand(0, 100);
-        $user = new User();
-        $id = $user->getUsername();
         return new Response(
-            '<html><body>User id'.var_dump($id).'</body></html>'
+            '<html><body>User id'.$number.'</body></html>'
         );
     }
 }
